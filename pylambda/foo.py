@@ -1,4 +1,4 @@
-from hoge import spam
+from pylambda.bar import spam
 
 
 def ham():
