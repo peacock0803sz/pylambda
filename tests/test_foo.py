@@ -1,2 +1,4 @@
+from pylambda.foo import ham
+
 def test_foo():
-    pass
+    ham()
