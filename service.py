@@ -1,4 +1,4 @@
 from pylambda.service import main
 
-def handler(event, context):
+def lambda_handler(event, context):
     main(event, context)
