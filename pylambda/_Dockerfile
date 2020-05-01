@@ -1,0 +1,15 @@
+FROM amazonlinux:latest
+
+RUN yum -y update && yum -y install gcc git python3-devel python3-pip
+
+ENV AWS_ACCESS_KEY_ID 
+ENV AWS_SECRET_ACCESS_KEY 
+ENV AWS_DEFAULT_REGION 
+
+WORKDIR /app
+ADD . .
+
+CMD python3 -m venv /env && \
+    source /env/bin/activate && \
+    pip install -r requirements.txt && \
+    lambda deploy-s3 
