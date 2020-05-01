@@ -5,5 +5,5 @@ def ham():
     print(spam(), 'success')
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     ham()
