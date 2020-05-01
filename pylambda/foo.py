@@ -2,10 +2,8 @@ from pylambda.bar import spam
 
 
 def ham():
-    spam()
-    print('success')
+    print(spam(), 'success')
 
 
 if __name__ == 'main':
-    main()
-
+    ham()
